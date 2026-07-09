@@ -1,0 +1,213 @@
+<!-- Lệnh comment -->
+<!-- ctrl + / | command + / -->
+<!-- Lệnh Lưu -->
+<!-- ctrl + s -->
+
+<!-- Một câu lệnh giúp thực hiện tạo một cấu trúc template HTML cho trang web -->
+<!-- shift + 1 (!) -->
+
+<!-- Trong HTML có 2 loại thẻ là thẻ khuyết và cặp thẻ đóng mở  -->
+<!-- Thẻ khuyết thường là thẻ không hiển thị trên giao diện -->
+<!-- Cặp thẻ đóng mở sẽ hiển thị nội dung trên giao diện -->
+
+<!-- !doctype html : Khai báo phiên bản HTML (Ver 5 present) -->
+<!doctype html>
+<html lang="en">
+  <!-- Thẻ head chứa thông tin mô tả trang web -->
+  <head>
+    <!-- Thẻ meta khai báo thông tin và mô tả trang web để tối ưu SEO dễ dàng tìm kiếm (kỹ thuật nâng cao) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Thẻ title hiển thị tên trang web trên tab trình duyệt -->
+    <title>Cyber Cà phê</title>
+  </head>
+
+  <!-- Thẻ body hiển thị nội dung trên trang web -->
+  <body>
+    <!-- Thẻ heading (thẻ tiêu đề) -->
+    <!-- h1 - h6 -->
+    <!-- Thuộc tính = "giá trị" (style="background-color: blue") => CSS basic -->
+    <!-- Mã màu Hex(#....) và rgba [rgb(...,...,...,...)] -->
+    <!-- Các loại thuộc tính điều chỉnh thẻ -->
+    <!-- background-color => điều chỉnh màu nền -->
+    <!-- color => điều chỉnh màu chữ -->
+    <!-- text-aligh => canh lề phần tử (left, center, right) -->
+    <h1 style="text-align: center; background-color: #394a59; color: white">
+      CyberSoft Café
+    </h1>
+
+    <!-- Thẻ liên kết (a) -->
+    <!-- Thẻ a giúp chuyển hướng người dùng dựa trên đường dẫn được truyền vào thuộc tính href -->
+    <!-- Thuộc tính target của thẻ a nhận giá trị _blank giúp khi click mở 1 tab mới khi chuyển hướng -->
+    <a href="https://kenh14.vn/" target="_blank">Home</a>
+    <a href="https://www.google.com">Menu</a>
+    <a href="https://www.facebook.com/shnaht0501">Order</a>
+
+    <!-- Thẻ block & inline -->
+    <!-- Thẻ có phân chia giữa thẻ block và thẻ inline  -->
+    <!-- Thẻ block sẽ có chiều dài chiếm 1 dòng trình duyệt -->
+    <!-- Thẻ inline sẽ có chiều dài bằng nội dung đang chứa -->
+
+    <!-- Thẻ hr tạo line ngăn cách nội dung trên trình duyệt (ít sử dụng) -->
+    <!-- Thuộc tính noshade sử dụng để hr không đổ bóng -->
+    <hr style="width: 50%; height: 2px" noshade="" />
+
+    <h2 style="color: #996633; text-align: center">About our café</h2>
+
+    <!-- Thẻ p dùng để chứa nội dung văn bản trên trình duyệt -->
+    <p style="text-align: right">
+      <!-- Lệnh lorem giúp tạo đoạn văn bản giả  -->
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+      <!-- Thẻ br giúp xuống dòng văn bản -->
+      <br />
+      Delectus deleniti neque fugit ipsa animi eius placeat dolor quidem
+      adipisci recusandae molestias earum qui accusamus tempore vitae, rem
+      suscipit explicabo totam quasi facilis
+      <br />
+      optio voluptatibus cum unde! Ut,
+
+      <!-- Thẻ b giúp in đậm văn bản -->
+      <b>et aliquam iste id unde inventore vitae esse ad tenetur vel.</b>
+      <br />
+      Labore totam, expedita praesentium delectus vero ad excepturi dolor
+      laboriosam non commodi alias architecto placeat fugit magnam maiores earum
+      <br />
+      Rem maiores sapiente sequi provident, corporis error quibusdam eveniet
+      vero voluptates repellat esse enim repellendus dolore. Dolorum?
+    </p>
+
+    <hr style="width: 50%; height: 2px" noshade="" />
+
+    <h2 style="color: #996633; text-align: center">Special Items</h2>
+    <h3>The coffee list 1</h3>
+
+    <!-- Cặp thẻ ul,li là danh sách thẻ không có thứ tự -->
+    <!-- Thuộc tính type giúp chỉnh icon của danh sách -->
+    <ul type="circle" style="color: blue">
+      <li>Black coffee</li>
+      <li>pink coffee</li>
+      <li>Green</li>
+    </ul>
+
+    <!-- Thẻ img để hiển thị hình trên trình duyệt -->
+    <!-- Đường dẫn tuyệt đối (khi hình hoặc web đường dẫn sai hoặc không còn hiệu lực thì hình ảnh sẽ bị mất) -->
+    <!-- Thuộc tính alt để mô tả hình ảnh (chỉ xuất hiện khi hình bị bỏ) -->
+    <!-- <img
+      src="https://mcdn.pokemon.com/pokemon-prod/raw/upload/v1/live/static-assets/content-assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg"
+      alt="Pokemon"
+    /> -->
+
+    <!-- Đường dẫn tương đối (Sẽ đi đường dẫn trong thư mục dự án sẽ an toàn hơn vì hình đã có sẵn không bị mất) -->
+    <img src="./img/chilling-cafe-11.jpg" width="300px" alt="" />
+    <img src="./img/chilling-cafe-12.jpg" width="300px" alt="" />
+
+    <h3>The coffee list 2</h3>
+
+    <!-- Cặp thẻ ul,li là danh sách thẻ có thứ tự -->
+    <!-- Thuộc tính start, reversed -->
+    <!-- start giúp xác định số thứ tự bắt đầu -->
+    <!-- reversed giúp thự hiện đếm ngược lại số thứ tự -->
+    <ol type="I">
+      <li>Soft Deli Cup</li>
+      <li>Coffee Art</li>
+      <li>Speciality Tea</li>
+    </ol>
+    <img src="./img/chilling-cafe-13.jpg" width="605px" alt="" />
+
+    <hr style="width: 50%; height: 2px" noshade="" />
+    <h2 style="color: #996633; text-align: center">Menu</h2>
+
+    <!-- Thẻ table (chứa bảng trên trình duyệt) -->
+    <table
+      align="center"
+      border="2px"
+      style="width: 40%; border-color: #5d5d5d"
+      cellspacing="0px"
+      cellpadding="10px"
+    >
+      <!-- Thẻ thead (chứa tiêu đề các cột ) -->
+      <thead>
+        <!-- Thẻ tr tạo ra dòng trong bảng -->
+        <tr style="background-color: #c4cdd6">
+          <!-- Thẻ th tạo ra cột trong bảng -->
+          <!-- Thuộc tính colspan giúp hợp nhất cột -->
+          <th colspan="2">Name</th>
+          <th>Type</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <!-- Thẻ tbody (chứa tiêu đề của các dòng, cột) -->
+      <tbody>
+        <tr>
+          <!-- Thuộc tính rowspan giúp hợp nhất hàng -->
+          <td
+            rowspan="4"
+            style="
+              color: white;
+              background-image: url(./img/chilling-cafe-13.jpg);
+            "
+          >
+            Traditional Coffee
+          </td>
+          <td rowspan="2">Vietnamese coffee pin</td>
+          <td>Hot</td>
+          <td>60.000</td>
+        </tr>
+
+        <tr>
+          <td>Cold</td>
+          <td>28.000</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">milk coffee</td>
+          <td>Hot</td>
+          <td>38.000</td>
+        </tr>
+
+        <tr>
+          <td>Cold</td>
+          <td>54000</td>
+        </tr>
+
+        <tr>
+          <td
+            rowspan="4"
+            style="
+              color: white;
+              background-image: url(./img/chilling-cafe-11.jpg);
+            "
+          >
+            Expresso
+          </td>
+          <td>Amecian Coffee</td>
+          <td rowspan="4">Hot</td>
+          <td>110.000</td>
+        </tr>
+
+        <tr>
+          <td>Machiato</td>
+          <td rowspan="2">40.000</td>
+        </tr>
+
+        <tr>
+          <td>Cappuchino</td>
+        </tr>
+      </tbody>
+
+      <!-- Thẻ tfooter -->
+    </table>
+    <hr style="width: 50%; height: 2px" noshade="" />
+
+    <h2 style="color: #996633; text-align: center">Talk to us</h2>
+
+    <p style="text-align: center">
+      Reach us via <b>Email:</b>
+      <a href="mailto:thanhnlmvn@gmail.com">thanhnlmvn@gmail.com</a>
+      or <b>Hotline:</b> <a href="tel:0909313067">0909313067</a> . Thank you
+    </p>
+  </body>
+</html>

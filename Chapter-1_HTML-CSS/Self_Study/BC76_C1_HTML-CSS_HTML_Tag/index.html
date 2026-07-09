@@ -1,0 +1,212 @@
+<!-- Khai báo phiên bản của html (ver 5 present) -->
+<!doctype html>
+
+<!-- Thẻ html định dạng phạm vi của trang HTML -->
+<html>
+  <!-- Thẻ head định nghĩa các mô tả về trang HTML những thông tin được khai báo ở thẻ này sẽ không được hiển thị lên trên trang trình duyệt -->
+  <head>
+    <!--  meta_thuộc tính="giá trị"  -->
+    <!-- Thẻ meta utf-8 giúp hiển thị các font chữ có dấu -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+    <!-- Thẻ meta desc giúp mô tả trang web -->
+    <!-- Giúp các công cụ tìm kiếm (google,...) để tìm dữ liệu  -->
+    <!-- SEO: Hỗ trợ cho công cụ tìm kiếm -->
+    <meta name="description" content="" />
+
+    <!-- Thẻ title giúp thay đổi tên trên tag trình duyệt -->
+    <title>Demo HTML</title>
+  </head>
+
+  <!-- Xác định vùng thân của trang web chứa các nội dung hiển thị  -->
+  <body>
+    <!-- Thẻ Heading (h1-h6) là tiêu đề của trang web -->
+    <!-- CSS basic Inline style -->
+    <!-- thuộc tính style="property: value; property: value; " -->
+    <h1
+      id="h1"
+      style="color: pink; background-color: purple; text-align: center"
+    >
+      Cybersoft
+    </h1>
+
+    <h2>Cybersoft</h2>
+    <h3>Cybersoft</h3>
+    <h4>Cybersoft</h4>
+    <h5>Cybersoft</h5>
+    <h6>Cybersoft</h6>
+
+    <!-- Thẻ p là nội dung text của trang web -->
+    <p>
+      <!-- lorem => đoạn text ngẫu nhiên -->
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque
+      odit maxime nemo, quaerat non temporibus et, eum, ipsum laborum velit
+      eaque eos voluptate ut nam eius molestiae enim fugit.
+
+      <!-- Thẻ br giúp ngắt xuống dòng -->
+      <br />
+
+      <!-- Thẻ b in đậm text -->
+      <b>Lorem ipsum dolor sit amet.</b>
+      <br />
+
+      <!-- Thẻ i in nghiên text -->
+      <i>Lorem ipsum dolor sit amet.</i>
+      <br />
+
+      <b>
+        <i>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+          quaerat!
+        </i>
+      </b>
+      <br />
+
+      <!-- Thẻ u gạch dưới text -->
+      <u>Lorem ipsum dolor sit amet.</u>
+      <br />
+
+      <!-- Thẻ span là thẻ giả để custom css màu chữ,... -->
+      <span style="color: red">Cybersoft</span> ipsum dolor sit amet consectetur
+      adipisicing elit. Quia iure ipsum molestiae autem dolorem quasi. Fuga,
+      modi veniam placeat, optio nobis sed vel dolores quibusdam assumenda
+      aliquid velit minima necessitatibus!
+    </p>
+
+    <!-- Thẻ hr tạo đường ngang giúp ngang cách nội dung (ít sử dụng coi cho biết) -->
+    <!-- Đơn vị tuyệt đối -->
+    <!-- px -->
+    <hr style="height: 5px; width: 400px" noshade="" />
+
+    <!-- Đơn vị tương đối -->
+    <!-- % (ảnh hưởng lên thẻ cha gần nhất của thẻ đang xét) -->
+    <!-- VD: Thẻ body có 1000px thì 50% sẽ là 500px -->
+    <hr style="height: 5px; width: 50%" noshade="" />
+
+    <!-- Thẻ danh sách ul,li & ol, li -->
+    <!-- Danh sách không thứ tự (ul,li) -->
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <ul type="circle">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <ul type="square">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <!-- Danh sách có thứ tự (ol,li) -->
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+
+    <ol type="a">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+
+    <ol type="I">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+
+    <!-- Thẻ img giúp đưa hình lên trang web -->
+    <!-- Đường dẫn tuyệt đối -->
+    <!-- src= đường dẫn hình ảnh | alt= mô tả hình (Khi bị lỗi sẽ hiển thị mô tả) -->
+    <img
+      src="https://vn.portal-pokemon.com/play/resources/pokedex/img/pm/5794f0251b1180998d72d1f8568239620ff5279c.png"
+      alt=""
+    />
+
+    <!-- Đường dẫn tương đối  -->
+    <img src="./img/151.png" alt="" />
+
+    <br />
+
+    <!-- Thẻ a giúp chuyển trang, nội dung, email, phone khi click -->
+    <!-- target="_blank" thuộc tính này giúp mở tab mới  -->
+    <!-- Liên kết ngoại -->
+    <a href="./html/contact.html" target="_blank">Đi tới contact</a>
+    <a href="https://www.google.com/?hl=vi">Đi tới google</a>
+
+    <!-- Liên kết nội -->
+    <!-- Cần có id để sử dụng và id chỉ có 1 không được cùng tên -->
+    <a href="#h1">Đi tới H1</a>
+
+    <!-- Liên kết Email -->
+    <a href="mailto:thanhnlmvn@gmail.com">thanhnlmvn@gmail.com</a>
+
+    <!-- Liên kết Phone -->
+    <a href="tel:0909313067">0909313067</a>
+
+    <!-- Cấu trúc table trong html -->
+    <!-- table, tr, th, td -->
+    <!-- table: là khung xương của bảng -->
+    <!-- tr: là từng dòng của bảng -->
+    <!-- th: là tiêu đề của bảng -->
+    <!-- td: là nội dung của bảng -->
+    <!-- cellspacing: thuộc tính giúp điều chỉnh khoảng cách các ô với nhau -->
+    <!-- cellpadding: thuộc tính giúp điều chỉnh khoảng cách của nội dung với viền ô bên ngoài -->
+    <table
+      border="1px"
+      style="height: 200px; width: 400px"
+      cellspacing="0px"
+      cellpadding="20px"
+      align="center"
+    >
+      <tr style="color: chocolate">
+        <th
+          style="
+            background-image: url(./img/151.png);
+            background-position: center;
+          "
+          rowspan="3"
+          colspan="2"
+        >
+          History
+        </th>
+        <th>Name</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>Tony</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>item 1</td>
+        <td>item 2</td>
+        <td>item 3</td>
+        <td>item 4</td>
+      </tr>
+    </table>
+
+    <!-- Thẻ div để gôm nhóm các thành phần nhỏ với nhau -->
+    <div class="header" id="header">
+      <ul>
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Lộ trình học</a></li>
+      </ul>
+    </div>
+
+    <!-- Phần banner, carousel, slider -->
+    <div class="banner" id="banner">
+      <img src="./img/151.png" alt="" />
+    </div>
+  </body>
+</html>

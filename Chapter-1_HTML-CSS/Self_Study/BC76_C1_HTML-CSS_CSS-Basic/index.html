@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo CSS</title>
+    <!-- External CSS -->
+    <!-- Viết CSS qua file riêng liên kết qua thẻ link trong thẻ head để dễ quản lý và tái sử dụng (sử dụng nhiều nhất) -->
+    <link rel="stylesheet" href="./css/demo.css" />
+
+    <!-- Internal CSS -->
+    <!-- Viết thẻ style trong thẻ head -->
+    <style>
+      h1 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <!-- Thêm trực tiếp css thông qua thuộc tính style -->
+    <h1 style="background-color: red">Demo CSS</h1>
+
+    <h2 class="heading2 title" id="title2">Demo class</h2>
+    <h2 class="heading2">Demo class 2</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="section1">
+      <p>
+        <span>Lorem.</span>
+        Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+    <h3>Demo selector +</h3>
+    <h3>Demo selector ~</h3>
+    <p class="section1">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

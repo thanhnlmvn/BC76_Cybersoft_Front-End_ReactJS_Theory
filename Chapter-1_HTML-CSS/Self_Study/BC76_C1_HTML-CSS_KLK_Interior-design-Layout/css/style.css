@@ -1,0 +1,213 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.clear {
+  clear: both;
+}
+/* HEADER CSS */
+.header img {
+  width: 250px;
+}
+
+.header ul {
+  list-style: none;
+  background-color: black;
+
+  /* padding giúp đẩy phần sau bên trong từ border vào sau bên trong (model box)  */
+  /* tương tự giống margin có thể điều chỉnh 4 hướng */
+  /* Lưu ý khi sử dụng padding với các thẻ tương tác click được nên chú ý vì khi điều chỉnh phần click cũng sẽ mở rộng sẽ không tốt về mặc UX */
+  padding: 10px;
+}
+
+.header li {
+  /* margin giúp đẩy các phần tử ở ngoài từ border ra bên ngoài (model box) */
+
+  /* top,bottom,right,left = 20px */
+  /* margin: 20px */
+
+  /* top,bottom = 10px , right,left = 20px */
+  /* margin: 10px 20px; */
+
+  /* Top = 10px | Bottom = 20px | left,right = 15px */
+  /* margin: 10px 15px 20px; */
+
+  /* Top = 10px | right = 15px | bottom = 20px | left = 25px */
+  /* margin: 10px 15px 20px 25px; */
+
+  /* Truyền 1 bên cụ thể */
+  margin-right: 20px;
+  display: inline;
+}
+
+.header li a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* CAROUSEL CSS */
+.carousel {
+  background-image: url(./../img/slider_1.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* PRODUCTS CSS */
+.products h1 {
+  text-align: center;
+  font-size: 30px;
+}
+/* float kĩ thuật đưa các phần tử lên cùng 1 dòng */
+/* khi sử dụng khai báo float lên các phần tử cần đưa */
+/* phải dùng thuộc tính width để có chiều dài của phần đó */
+.products .products__item {
+  float: left;
+  width: calc(100% / 4);
+  padding: 0 10px;
+
+  /* box-sizing: border-box sử dụng để padding của phần tử sẽ không bị cộng thêm kích thước của phần tử mà phần tử sẽ nhỏ lại cho padding được vào mà không mất đi kích thước ban đầu */
+  /* thường được sử dụng ở phần * để reset CSS ở trên đầu */
+  /* box-sizing: border-box; */
+}
+
+/* Khi sử dụng float sẽ gây ra cho các thành phần ở dưới khai phần float sẽ bị vỡ layout nên khi sử dụng xong float thì nên clear nó đi để layout trở về lại bình thường */
+/* Phần clear này nên được khai báo ở trên Global khi cần sử dụng chỉ cần gọi div có class clear là được */
+/* .clear {
+  clear: both;
+} */
+
+.products .products__item img {
+  width: 100%;
+}
+
+.products .products__item button {
+  background-color: #d9534f;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.products .products__item h2 {
+  font-size: 25px;
+}
+
+/* INTRO CSS */
+.intro .intro__text {
+  font-size: 20px;
+  margin: 25px 0 40px;
+}
+
+.intro .intro__text span {
+  color: red;
+  font-weight: bold;
+}
+
+.intro .intro__content .intro__left,
+.intro .intro__content .intro__right {
+  float: left;
+  width: 50%;
+}
+
+.intro__left .intro__top .intro__items img {
+  float: left;
+  width: 50%;
+}
+
+.intro__items img {
+  display: block;
+  width: 100%;
+  padding: 0 15px 25px;
+}
+
+/* BANNER CSS */
+.banner {
+  background-image: url(./../img/nature.jpg);
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 50px 0;
+}
+
+.banner__circle {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(155, 23, 23, 0.8);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+
+  /* Position sẽ điều chỉnh được top,right,bottom,left */
+  position: absolute;
+  top: 15px;
+  left: 340px;
+}
+
+.banner__circle p {
+  margin: 0 0 20px;
+}
+
+/* Selector child */
+/* first-child thẻ con đầu tiên */
+.banner__circle p:first-child {
+  font-size: 30px;
+  margin: 50px 0 0;
+}
+
+/* nth-child() điền thứ tự thẻ con */
+.banner__circle p:nth-child(2) {
+  font-size: 80px;
+  margin: 0;
+}
+
+/* SERVICES CSS */
+.services__content {
+  /* Mẹo canh giữa phần vào sâu màn hình */
+  /* Để width < 100% và sử dụng margin 0 auto sẽ đẩy phần vào giữa */
+  width: 70%;
+  margin: 0 auto;
+}
+
+.services__content .services__item {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 0 15px;
+}
+
+.services__item i {
+  font-size: 50px;
+}
+
+.services__item h2 {
+  margin: 10px 0 0;
+}
+
+/* FOOTER CSS */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 18px;
+}

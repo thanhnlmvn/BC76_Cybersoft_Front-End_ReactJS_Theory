@@ -1,0 +1,61 @@
+/* selecter{
+  property: value;
+} */
+
+/* Selector */
+/* Tag name */
+h1 {
+  text-align: center;
+}
+
+/* Class name */
+/* .heading2 {
+  background-color: green;
+} */
+
+/* Bộ selector */
+.heading2,
+p {
+  background-color: green;
+}
+
+/* Id */
+#title2 {
+  color: white;
+}
+
+/* Parent selector */
+.section1 p {
+  font-size: 30px;
+}
+
+.section1 span {
+  color: red;
+}
+
+/* All selector */
+* {
+  font-weight: bold;
+}
+
+/* > Selector */
+/* Con trực tiếp của parent selector */
+.section1 > p {
+}
+
+/* + Selector */
+/* Lấy cùng cấp với parent selector chỉ lấy 1 thẻ gần nhất */
+.section1 + h3 {
+  background-color: red;
+}
+
+/* ~ Selector */
+/* Lấy cùng cấp với parent selector lấy toàn bộ cùng cấp */
+/* .section1 ~ h3 {
+  background-color: yellow;
+} */
+
+/* Attribute Selector */
+p[class="section1"] {
+  background-color: violet;
+}

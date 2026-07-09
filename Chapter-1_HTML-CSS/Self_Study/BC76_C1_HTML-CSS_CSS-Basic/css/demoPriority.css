@@ -1,0 +1,34 @@
+/* h1 {
+  font-size: 40px;
+} */
+
+/* Độ ưu tiên về điểm selector */
+/* Tag name = 1đ */
+/* Class name = 10đ */
+/* Id = 100đ */
+/* Cùng điểm code nằm ở dưới sẽ đè lên code cũ */
+
+/* 1đ */
+h1 {
+  background-color: red;
+}
+
+/* 10đ */
+.heading1 {
+  background-color: yellow;
+}
+
+/* 100đ */
+/* #title1 {
+  background-color: green;
+} */
+
+/* 10 + 100 = 110đ */
+.heading1#title1 {
+  background-color: blue;
+}
+
+/* 100đ */
+#title1 {
+  background-color: pink;
+}

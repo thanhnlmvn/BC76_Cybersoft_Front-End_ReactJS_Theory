@@ -1,0 +1,91 @@
+/* Selector */
+/* Selector tag name */
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Selector id */
+#demo {
+  background-color: brown;
+  color: white;
+  font-size: 10px;
+}
+
+/* Selector class name */
+.demo2 {
+  color: orange;
+  background-color: black;
+}
+
+/* Selector parent */
+/* div p {
+  color: yellow;
+  background-color: black;
+} */
+
+/* p:first-child: gọi tới thẻ p đầu tiên */
+/* div p:first-child {
+  color: yellow;
+  background-color: black;
+} */
+
+/* p:last-child: gọi tới thẻ p cuối cùng */
+/* div p:last-child {
+  color: yellow;
+  background-color: black;
+} */
+
+/* p:nth-child(): gọi đến vị trí của thẻ p */
+div p:nth-child(2) {
+  color: yellow;
+  background-color: black;
+}
+
+/* Thứ tự ưu tiên */
+/* 
+  Tag name = 1đ
+  Class name = 10đ
+  id = 100đ
+  
+  Code nằm bên dưới sẽ đè được code nằm bên trên
+*/
+
+/* 1đ */
+h5 {
+  text-align: center;
+  background-color: blue;
+}
+
+/* 10 + 100 + 1 = 111đ */
+.demo3#demo4 h5 {
+  background-color: yellow;
+}
+
+/* 1đ */
+h5 {
+  background-color: brown;
+}
+
+/* padding và margin */
+.oDen {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+
+  /* marin: tạo khoảng cách thành phần bên ngoài thẻ html ( từ border ra ngoài box model) */
+  /* margin: 20px; */
+  /* margin: 20px 40px; */
+  /* margin: 20px 40px 60px; */
+  /* margin: 20px 40px 60px 80px; */
+  /* margin-bottom: 100px; */
+}
+
+.oCam {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  /* padding: tạo khoảng cách thành phần bên trong thẻ html ( từ border vào trong box model) */
+  padding: 20px;
+}

@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* box-sizing: border-box; sẽ giúp chuyển đổi */
+  /* Từ chiều dài của một thẻ html = chiều dài nội dung bên trong */
+  /* Sang chiều dài của một thẻ html = chiều dài nội dung + padding + border */
 }
 
 ul {
@@ -28,4 +32,115 @@ a {
 .header li {
   display: inline;
   margin-right: 30px;
+}
+
+/* BANNER CSS */
+.banner {
+  background-image: url(./../img/BG.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* EXPLORE CSS */
+.explore {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #faf4f2;
+}
+
+.explore__title h2 {
+  color: #8d8d8d;
+}
+
+.explore__content {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore__content .explore__item {
+  padding: 15px;
+}
+
+.explore__item .item__bg {
+  background: white;
+
+  /* border-radius giúp bo tròn các góc phần tử html */
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.item__img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.explore__item h3 {
+  line-height: 28px;
+  margin-top: 11px;
+}
+
+.explore__item p {
+  line-height: 28px;
+  margin-top: 11px;
+  color: #8d8d8d;
+
+  /* transparent màu trong suốt */
+  background-color: transparent;
+}
+
+.explore__item button {
+  padding: 13px 54px;
+  border-radius: 25px;
+  color: #8d8d8d;
+
+  /* border điều chỉnh đường viền */
+  /* border-width: 10px; điều chỉnh độ dày đường viền */
+  /* border-color: orange; điều chỉnh màu đường viền */
+  /* border-style: solid; điều chỉnh kiểu đường viền */
+  /* border: 1px solid blue; cách viết tắc */
+  border: transparent;
+  margin-top: 11px;
+}
+
+.item__img {
+  /* position sẽ giúp phần tử có thể di chuyển theo 4 hướng trên giao diện */
+  /* đi kèm với position sẽ có 4 thuộc tính để điều chỉnh top,left,right,bottom */
+  /* position: relative; giúp di chuyển di chuyển bắt đầu từ vị trí mặc định của phần tử đang được khai báo */
+  position: relative;
+}
+
+.item__img .item__heart {
+  color: #e76f51;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+
+  /* Thủ thuật tạo hình vuông và canh giữa phần tử  */
+  /* Cách 1 */
+  /* Khi khai báo height = line-height phần tử sẽ được căng giữa */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+
+  /* Cách 2 */
+  /* padding: 16px; */
+
+  /* opacity thuộc tính giúp làm mờ phần tử */
+  opacity: 0.7;
+
+  /* position: relative; giúp di chuyển di chuyển lên trên các phần tử cha có thuộc tính position: relative; */
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.explore .btn__view {
+  padding: 13px 60px;
+  border-radius: 25px;
+  border: 1px solid #e76f51;
+  color: #e76f51;
+  background: transparent;
+  margin: 30px 0 0;
 }

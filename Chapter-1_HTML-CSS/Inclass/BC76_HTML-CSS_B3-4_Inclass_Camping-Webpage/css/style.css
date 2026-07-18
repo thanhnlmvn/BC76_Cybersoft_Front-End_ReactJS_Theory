@@ -10,6 +10,11 @@
   /* Sang chiều dài của một thẻ html = chiều dài nội dung + padding + border */
 }
 
+body,
+html {
+  background-color: #faf4f2;
+}
+
 ul {
   list-style: none;
 }
@@ -143,4 +148,93 @@ a {
   color: #e76f51;
   background: transparent;
   margin: 30px 0 0;
+}
+
+/* CONTACT CSS */
+.contact {
+  background-color: #f8e1db;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.contact__img {
+  background-image: url(./../img/mask.png);
+  background-position: center;
+  background-size: cover;
+  padding: 20px 60px;
+  width: 50%;
+}
+
+.contact__title h2 {
+  color: #8d8d8d;
+}
+
+.contact__title p {
+  margin: 12px 0 30px;
+  color: #8d8d8d;
+}
+
+.contact__content {
+  display: flex;
+}
+
+.contact__content h3 {
+  margin-bottom: 21px;
+  color: #8d8d8d;
+}
+
+.contact__download {
+  width: 50%;
+}
+
+.contact__social svg {
+  color: #e76f51;
+  font-size: 25px;
+  margin-right: 2px;
+}
+
+/* FOOTER CSS */
+.footer {
+  background-color: #f8e1db;
+  border-radius: 100px 100px 0 0;
+  color: #3b3735;
+  padding: 70px 0 0;
+}
+
+.footer__top {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.footer__top .footer__item:first-child {
+  width: 40%;
+  padding: 0 50px;
+}
+
+.footer__top .item__link {
+  width: calc(60% / 3);
+}
+
+.footer__item h3 {
+  margin-bottom: 21px;
+}
+
+.footer__item p {
+  line-height: 28px;
+}
+
+.footer__item li {
+  margin-bottom: 12px;
+}
+
+.footer__item a {
+  color: #3b3735;
+}
+
+.footer__bottom {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
